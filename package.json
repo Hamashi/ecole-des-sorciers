@@ -1,0 +1,45 @@
+{
+    "name": "blindtest-discord",
+    "version": "1.0.0",
+    "description": "bot Discord for blindtest",
+    "main": "src/Main.ts",
+    "scripts": {
+        "start": "ts-node src/Main.ts",
+        "lint": "eslint . --ext .ts --fix",
+        "build": "tsc",
+        "prod": "node build/Main.js",
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Hamashi/blindtest-discord.git"
+    },
+    "keywords": [
+        "blindtest",
+        "bot",
+        "Discord"
+    ],
+    "author": "Hamashi",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Hamashi/blindtest-discord/issues"
+    },
+    "homepage": "https://github.com/Hamashi/blindtest-discord#readme",
+    "dependencies": {
+        "@discordjs/opus": "^0.5.3",
+        "discord.js": "^12.5.3",
+        "dotenv": "^9.0.2",
+        "ffmpeg-static": "^4.4.0",
+        "ts-node": "^9.1.1",
+        "tslib": "^2.3.0",
+        "typescript": "^4.3.5",
+        "ytdl-core": "^4.9.1"
+    },
+    "devDependencies": {
+        "@typeit/discord": "^4.0.10",
+        "@types/node": "^14.17.9",
+        "@typescript-eslint/eslint-plugin": "^4.29.0",
+        "@typescript-eslint/parser": "^4.29.0",
+        "eslint": "^7.32.0"
+    }
+}
