@@ -72,7 +72,6 @@ export class Blindtest {
         }
         this.started = true;
         this.soundControl = this.voiceConnection.play(ytdl(this.getCurrentSong().url), {seek: this.getCurrentSong().timeCode});
-        console.log(this.scoreManager.getScoreMessage());
     }
 
     start(): void {
@@ -84,7 +83,7 @@ export class Blindtest {
         this.roundIndex = 0;
         if(this.started) {
             this.buzzChannel.send("Merci d'avoir participé à ce blindtest, voici les résultats finaux : ");
-            this.buzzChannel.send(this.scoreManager.getScoreMessage())
+            this.buzzChannel.send(this.scoreManager.getScoreMessage());
         }
         this.started = false;
         this.voiceChannel.leave();
