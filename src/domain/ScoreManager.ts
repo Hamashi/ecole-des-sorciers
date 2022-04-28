@@ -10,6 +10,7 @@ export class ScoreManager {
         } else {
            this.scores.set(user, number)
         }
+        console.log(this.getScoreMessage());
     }
 
     getScoreMessage(): string {

@@ -10,11 +10,6 @@ import {
   @Description("Generic commands")
   export abstract class Commands {
 
-    @Command("ping")
-    ping(command: CommandMessage): void {
-      command.reply("pong!");
-    }
-
     @On("ready")
     initialize(): void {
       console.log("Bot logged in.");
